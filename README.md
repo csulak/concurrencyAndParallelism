@@ -2,6 +2,8 @@
 
 Welcome to the **Concurrency and Parallelism Learning Project**! This repository is designed to help developers understand and experiment with concepts related to multithreading, synchronization, and atomic operations in Java. The project includes practical examples and exercises to deepen your knowledge of concurrent programming.
 
+## Para mas informacion ir al readme del package `src/threads/Readme.md` Todos los packages del package thread los deje ordenados alfabeticamente. En cuanto a como estudiar y repasar
+
 ---
 
 ## 📖 **Overview**
