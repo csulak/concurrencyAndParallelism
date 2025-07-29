@@ -14,6 +14,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * Por ende el ReadWriteLock es una implementacion de un candado que permite
  * que varios threads lean al mismo tiempo, pero solo uno escriba.
  *
+ * Fijate que el metodo leer() llama a readWriteLock.readLock() y el metodo escribir() a readWriteLock.writeLock()
+ * De esta forma todas las lecturas se hacen sin problema hasta que aparece una escritura y ahi queda completamente bloqueado hasta que finalice la escritura.
  */
 public class Repositorio {
 
@@ -62,13 +64,14 @@ public class Repositorio {
 
 
     public static void main(String[] args) {
+
         ExecutorService service = Executors.newFixedThreadPool(4);
 
-        Repositorio ejemplo = new Repositorio();
+        Repositorio repo = new Repositorio();
 
         // Creamos threads para leer y escribir
-        Runnable leer = new Thread(ejemplo::leer);
-        Runnable escribir = new Thread(ejemplo::escribir);
+        Runnable leer = new Thread(repo::leer);
+        Runnable escribir = new Thread(repo::escribir);
 
 
         for (int i = 0; i < 10; i++) {
