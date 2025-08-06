@@ -1,4 +1,4 @@
-package threads.CSyncBloqueUsandoMonitor;
+package threads.CSynchronizedBloqueUsandoMonitor;
 
 public class Timbre {
 

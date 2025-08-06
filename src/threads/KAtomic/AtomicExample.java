@@ -5,6 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class AtomicExample implements Runnable {
     AtomicInteger count = new AtomicInteger();
 
+
     public void run() {
         for (int i = 0; i < 10000; i++) {
             count.incrementAndGet();

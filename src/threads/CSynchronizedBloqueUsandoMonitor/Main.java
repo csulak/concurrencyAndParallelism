@@ -1,4 +1,4 @@
-package threads.CSyncBloqueUsandoMonitor;
+package threads.CSynchronizedBloqueUsandoMonitor;
 
 /**
  * Este es otro ejemplo de como usar synchronized. Pero aca lo aplicamos a un bloque de codigo

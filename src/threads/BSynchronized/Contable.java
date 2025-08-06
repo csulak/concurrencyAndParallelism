@@ -1,4 +1,4 @@
-package threads.BSync;
+package threads.BSynchronized;
 
 public class Contable implements Runnable{
 
