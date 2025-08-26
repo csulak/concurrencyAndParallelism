@@ -21,7 +21,7 @@ public class MainFixedThreadPoolExecutor {
             service.submit(new TareaFalsa("Tarea " + i, 2000, i));
         }
 
-        // Esta linea es importante porque es la que avisa que se apague el "apague" el hilo creado al finalizar
+        // Esta linea es importante porque es la que avisa que se genere el "apague" del hilo creado al finalizar
         service.shutdown();
         //service.shutdownNow() // Esto apaga el hilo inmediatamente, sin esperar a que termine la tarea
 
